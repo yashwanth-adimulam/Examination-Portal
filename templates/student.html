@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Dashboard</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            font-family: Poppins;
+            margin: 10px 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            margin: 20px 0;
+            background-color: #f8ff2f;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .quiz {
+            background-color: #ede9e9;
+            border-radius: 10px;
+            margin: 15px auto;
+            padding: 10px 20px;
+        }
+
+        .container {
+            min-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.482);
+        }
+
+        .options {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        input[type="submit"] {
+            font-family: Poppins;
+            font-weight: 500;
+            width: 20%;
+            padding: 10px;
+            background-color: #000000bb;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student Dashboard</h2>
+        <form method="POST">
+            <div class="quiz">
+                <h3>{{ question['Question'] }}</h3>
+                <div class="options">
+                    <label><input type="radio" name="option" value="{{ question['Option1'] }}"> {{ question['Option1']
+                        }}</label>
+                    <label><input type="radio" name="option" value="{{ question['Option2'] }}"> {{ question['Option2']
+                        }}</label>
+                    <label><input type="radio" name="option" value="{{ question['Option3'] }}"> {{ question['Option3']
+                        }}</label>
+                    <label><input type="radio" name="option" value="{{ question['Option4'] }}"> {{ question['Option4']
+                        }}</label>
+                </div>
+            </div>
+            <input type="submit" value="Next">
+        </form>
+    </div>
+</body>
+
+</html>

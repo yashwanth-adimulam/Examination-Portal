@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Staff Dashboard</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            font-family: Poppins;
+            margin: 10px 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #f8ff2f;
+            border-radius: 10px;
+        }
+
+        .quiz {
+            background-color: #ede9e9;
+            border-radius: 10px;
+            margin: 10px auto;
+            padding: 10px 20px;
+        }
+
+        .container {
+            min-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.482);
+        }
+
+        table {
+            margin: 10px auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #090909;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Staff Dashboard</h2>
+        <div class="quiz">
+            <h3>GK Quiz Results</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Score</th>
+                        <th>Remark</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for result in results %}
+                    <tr>
+                        <td>{{ result['Mail'] }}</td>
+                        <td>{{ result['TotalScore'] }}</td>
+                        <td>{{ result['Remark'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

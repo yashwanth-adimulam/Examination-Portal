@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Result</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin: 20px 0;
+            background-color: #f8ff2f;
+            border-radius: 10px;
+        }
+
+        body {
+            text-align: center;
+            font-family: Poppins;
+            background-color: #f4f4f4;
+        }
+
+        a {
+            color: #100f0f;
+            text-decoration: none;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            font-family: Poppins;
+            font-weight: 500;
+            width: 50%;
+            padding: 10px;
+            background-color: #e1dbdb;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5d595970;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.119);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Quiz Result</h2>
+        <p>Your score is: {{ score }}</p>
+        <button><a href="/">Go to Login Page</a></button>
+    </div>
+</body>
+
+</html>
