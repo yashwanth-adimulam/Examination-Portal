@@ -1,6 +1,6 @@
 # Examination-Portal
-### Database:### MySQL
-### Frontend:HTML, CSS
+### Database: MySQL
+### Frontend: HTML, CSS
 ### Backend: Flask(Python)
 
 
