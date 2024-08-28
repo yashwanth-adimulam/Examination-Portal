@@ -11,13 +11,23 @@ Our main goal is to efficiently evaluate students through a fully automated syst
 - **Frontend:** HTML, CSS
 - **Backend:** Flask (Python)
 
+## Features
 
-ONLINE EXAMINATION SYSTEM is a web-based examination system where examinations are given online. either through the internet or intranet using computer system. The main goal of this online examination system is to effectively evaluate the student thoroughly through a totally automated system that not only reduce the required time but also obtain fast and accurate results.
+Our examination portal offers a user-friendly interface for both students and staff. Here's a quick look at some key features:
 
-## Database:
-Database used in this project is MySQL using the below mentioned schema.
+1. **Secure Login:** Ensures only authorized users can access the system.
+2. **Student Dashboard:** A personalized space for students to manage their exams.
+3. **Staff Dashboard:** Empowers staff to oversee and manage examinations.
+4. **Results Page:** Provides instant and accurate exam results.
+
+## Database Structure
+We use MySQL for our database, following a carefully designed schema. Check out our schema diagram for a visual representation of the database structure:
+
 ### Schema Diagram - 
 ![Relational Scheme](https://github.com/user-attachments/assets/955ae248-f83a-4eb7-9f95-dab23c278db6)
+
+## User Interface Previews
+Get a sneak peek of our intuitive user interfaces:
 
 ### Login Page - 
 ![Login Page](https://github.com/user-attachments/assets/7925a07f-0349-4301-9750-49bb170e4ef7)
@@ -32,8 +42,9 @@ Database used in this project is MySQL using the below mentioned schema.
 ![Results](https://github.com/user-attachments/assets/c457f5a3-af48-4dc0-bccc-cd65065d0f5f)
 
 
-## How to run this repo:
-1. Have tabels in MySQL according to the schema provided (if you want a have examples of this checkout the tabels folder)
-2. Run the app.py and load the webpage with the local host
-3. If you want to add new questions to the quiz then simply add those question with options in the questions table using the same quiz id
-4. If you wnat to add new quizes then add then to the quiz table with a new quiz id
+## Getting Started
+Follow these steps to set up and run the Examination Portal:
+1. Set up MySQL tables according to the provided schema. (For examples, check out the `tables` folder)
+2. Run `app.py` and access the webpage via localhost.
+3. To add new questions to a quiz, insert them into the `questions` table using the appropriate quiz ID.
+4. To create a new quiz, add it to the `quiz` table with a new quiz ID.
